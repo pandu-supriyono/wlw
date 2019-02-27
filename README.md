@@ -8,4 +8,4 @@ This script requires python 3.x and the BeautifulSoup4 library. It also requires
 Clone into your $PATH and make wlw executable with `$ sudo chmod +x wlw`
 
 ## Usage
-In your terminal, type `$ wlw <noun>` where <noun> is the noun for which you want to find out the corresponding article. E.g. `$ wlw auto` will return `De auto`.
+In your terminal, type `$ wlw <noun>` where `<noun>` is the noun for which you want to find out the corresponding article. E.g. `$ wlw auto` will return `De auto`.
