@@ -1,5 +1,5 @@
 # wlw (Welk lidwoord)
-A simple BeautifulSoup parsing script for the website welklidwoord.nl, a website to find out which article (lidwoord) belongs to a noun (zelfstandig naamword) in the Dutch language.
+A simple BeautifulSoup parser script for the website welklidwoord.nl, a website to find out which article (lidwoord) belongs to a noun (zelfstandig naamword) in the Dutch language.
 
 ## Requirements
 This script requires python 3.x and the BeautifulSoup4 library. It also requires an internet connection during usage.
