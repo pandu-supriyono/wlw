@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+# wlw - A BeautifulSoup parser for the website welklidwoord.nl, a website to find out which article (lidwoord) belongs to a noun (zelfstandig naamword) in the Dutch language.
+
+from urllib.request import urlopen as uReq
+from bs4 import BeautifulSoup as soup
+import sys
+
+def wlw(znw):
+    znw_url = 'https://www.welklidwoord.nl/' + znw
+
+    uClient = uReq(znw_url)
+    page_html = uClient.read()
+    uClient.close()
+    page_soup = soup(page_html, "html.parser")
+    ans = page_soup.find("h1").text
+
+    print(ans)
+    return
+
+wlw(sys.argv[1])
